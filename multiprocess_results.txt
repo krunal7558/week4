@@ -1,0 +1,90 @@
+
+Start time: 2016-08-29 13:34:46.863128
+
+Successful devices:
+
+
+
+################################################################################
+Device = 184.105.247.70:22
+
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.220.88.1            85   0062.ec29.70fe  ARPA   FastEthernet4
+Internet  10.220.88.20            -   c89c.1dea.0eb6  ARPA   FastEthernet4
+Internet  10.220.88.28          237   5254.aba8.9aea  ARPA   FastEthernet4
+Internet  10.220.88.29          219   5254.abc2.2c78  ARPA   FastEthernet4
+Internet  10.220.88.31          220   5254.abce.fef0  ARPA   FastEthernet4
+Internet  10.220.88.32            0   Incomplete      ARPA   
+Internet  10.220.88.38            0   0001.00ff.0001  ARPA   FastEthernet4
+Internet  10.220.88.40          243   001c.c4bf.826a  ARPA   FastEthernet4
+Internet  10.220.88.41          100   001b.7873.5634  ARPA   FastEthernet4
+################################################################################
+
+
+
+################################################################################
+Device = 184.105.247.71:22
+
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  10.220.88.1            85   0062.ec29.70fe  ARPA   FastEthernet4
+Internet  10.220.88.21            -   1c6a.7aaf.576c  ARPA   FastEthernet4
+Internet  10.220.88.28            2   5254.aba8.9aea  ARPA   FastEthernet4
+Internet  10.220.88.29          215   5254.abc2.2c78  ARPA   FastEthernet4
+Internet  10.220.88.30          225   5254.abe0.0638  ARPA   FastEthernet4
+Internet  10.220.88.40           48   001c.c4bf.826a  ARPA   FastEthernet4
+Internet  10.220.88.41          187   001b.7873.5634  ARPA   FastEthernet4
+################################################################################
+
+
+
+################################################################################
+Device = 184.105.247.73:22
+
+Address         Age (min)  Hardware Addr   Interface
+10.220.88.1             0  0062.ec29.70fe  Vlan1, Ethernet1
+10.220.88.20            0  c89c.1dea.0eb6  Vlan1, Ethernet1
+10.220.88.21            0  1c6a.7aaf.576c  Vlan1, not learned
+10.220.88.38            0  0001.00ff.0001  Vlan1, Ethernet1
+################################################################################
+
+
+
+################################################################################
+Device = 184.105.247.72:22
+
+Address         Age (min)  Hardware Addr   Interface
+10.220.88.1             0  0062.ec29.70fe  Vlan1, Ethernet1
+10.220.88.20            0  c89c.1dea.0eb6  Vlan1, Ethernet1
+10.220.88.21            0  1c6a.7aaf.576c  Vlan1, Ethernet1
+10.220.88.38            0  0001.00ff.0001  Vlan1, Ethernet1
+################################################################################
+
+
+
+################################################################################
+Device = 184.105.247.74:22
+
+Address         Age (min)  Hardware Addr   Interface
+10.220.88.1             0  0062.ec29.70fe  Vlan1, Ethernet1
+10.220.88.21            0  1c6a.7aaf.576c  Vlan1, not learned
+10.220.88.38            0  0001.00ff.0001  Vlan1, Ethernet1
+################################################################################
+
+
+
+################################################################################
+Device = 184.105.247.74:22
+
+Address         Age (min)  Hardware Addr   Interface
+10.220.88.1             0  0062.ec29.70fe  Vlan1, Ethernet1
+10.220.88.21            0  1c6a.7aaf.576c  Vlan1, not learned
+10.220.88.38            0  0001.00ff.0001  Vlan1, Ethernet1
+################################################################################
+
+
+Failed devices:
+
+Device failed = 184.105.247.76:22
+
+End time: 2016-08-29 13:35:00.388452
+

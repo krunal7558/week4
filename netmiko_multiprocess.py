@@ -26,7 +26,6 @@ from DEVICES import all_devices
 
 
 def print_output(results):
-    
     print "\nSuccessful devices:"
     for a_dict in results:
         for identifier,v in a_dict.iteritems():
@@ -49,11 +48,11 @@ def print_output(results):
     print
 
 
-def worker_show_arp(a_device, mp_queue):
+def worker_show_arp(a_device, mp_queue=None):
     '''
     Return a dictionary where the key is the device identifier
     Value is (success|fail(boolean), return_string)
-    '''    
+    '''
 
     try:
         a_device['port']
@@ -64,21 +63,21 @@ def worker_show_arp(a_device, mp_queue):
     return_data = {}
 
     show_arp_command = 'show arp'
-    SSHClass = netmiko.ssh_dispatcher(a_device['device_type'])
-
     try:
-        net_connect = SSHClass(**a_device)
+        net_connect = netmiko.ConnectHandler(**a_device)  # pass whole dictionary
         show_arp = net_connect.send_command(show_arp_command)
     except (NetMikoTimeoutException, NetMikoAuthenticationException) as e:
         return_data[identifier] = (False, e)
 
         # Add data to the queue (for parent process)
-        mp_queue.put(return_data)
+        if mp_queue != None:
+            mp_queue.put(return_data)
         return None
-
     return_data[identifier] = (True, show_arp)
-    mp_queue.put(return_data)
-
+    if mp_queue != None:
+        mp_queue.put(return_data)
+    else:
+        return return_data
 
 def main():
 
